@@ -1,7 +1,16 @@
 package com.demo;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component(value = "p") //<bean id="p" class="com.demo.Passanger"
 public class Passanger {
+	
+	@Value("raj") //<property name="name" value="raj"/>
 	private String name;
+	
+	@Autowired	// autowire="byType"
 	private Vehical vehical;
 
 	public Passanger() {

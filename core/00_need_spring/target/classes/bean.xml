@@ -4,10 +4,27 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 	<!--  i want to teach spring that passanger is depends on car -->
-	
-	<bean id="p" class="com.demo.Passanger">
+	<!-- singleton , prototype factory
+		scope="singleton" or "prototype" 
+		eager vs lazy lazy-init="true" or lazy-init="false"
+		
+		concept of autowrire : shortCut
+		primary="true" Imp					autowire-candidate="false"
+	 -->
+	<bean id="p" class="com.demo.Passanger" autowire="byType">
 		<property name="name" value="raj"/>
-		<property name="vehical" ref="v"/>
 	</bean>
-	<bean id="v" class="com.demo.Bike"/>
+	
+	<bean id="v1" class="com.demo.Bike" autowire-candidate="false"/>
+	<bean id="v2" class="com.demo.Car"/>
+	
+	
 </beans>
+
+
+
+
+
+
+
+
