@@ -15,6 +15,7 @@ public class Main {
 		AccountService accountService=(AccountService) ctx.getBean("accountService");
 		
 		List<Account> accounts=accountService.getAll();
+		
 		accounts.forEach(acc-> System.out.println(acc));
 		
 		

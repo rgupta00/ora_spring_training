@@ -20,14 +20,14 @@ public class HelloWorldJdbc {
 
 		try {
 			connection = DriverManager.getConnection
-					("jdbc:mysql://localhost:3306/edu123?useSSL=false", "root", "root");
+					("jdbc:mysql://localhost:3306/oraapp?useSSL=false", "root", "root");
 			// now i want to print all records
 			stmt = connection.createStatement();
-			rs = stmt.executeQuery("select * from emp1");
+			rs = stmt.executeQuery("select * from account");
 
 			while (rs.next()) {
-				System.out.println(rs.getInt(1) + ":" + rs.getString(2) + ": " + rs.getString(3) + ": "
-						+ rs.getString(4) + ": " + rs.getDouble(5));
+				System.out.println(rs.getInt(1) + ":"  + rs.getString(2) + ": "
+						+ rs.getDouble(3));
 			}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block

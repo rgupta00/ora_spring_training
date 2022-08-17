@@ -11,6 +11,7 @@ public class HibernateSessionFactory {
 	private HibernateSessionFactory() {
 	}
 
+	//:(
 	public static SessionFactory getSessionFactory() {
 		StandardServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder()
 				.configure("hibernate.cfg.xml")

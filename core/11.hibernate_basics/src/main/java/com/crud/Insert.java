@@ -12,15 +12,20 @@ public class Insert {
 	public static void main(String[] args) {
 
 		SessionFactory factory = HibernateSessionFactory.getSessionFactory();
+		
 		Session session = factory.openSession();
 		
 		Transaction tx=session.getTransaction();
+		
+		//:(
 		try {
 			
 			tx.begin();
 			
-			Account account=new Account("veena", 2000.0);
+			Account account=new Account("rajat", 2000.0);
+			
 			session.save(account);
+			
 			tx.commit();
 			
 		}catch(HibernateException ex) {

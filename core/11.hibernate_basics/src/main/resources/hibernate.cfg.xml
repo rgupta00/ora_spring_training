@@ -5,10 +5,13 @@
 <hibernate-configuration>
 	<session-factory>
 		<!-- database connection setting -->
-		<property name="connection.url">jdbc:mysql://localhost:3306/edu123</property>
+		<property name="connection.url">jdbc:mysql://localhost:3306/oraapp</property>
 		<property name="connection.username">root</property>
 		<property name="connection.password">root</property>
 		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+		<!-- hibenate need to know which database sql i need to auto gen
+		 ORM framework: it take ur object convert into rs
+		 -->
 		<property name="hibernate.dialect">org.hibernate.dialect.MySQL57Dialect</property>
 
 		<!-- disable the second level cache -->
@@ -17,9 +20,12 @@
 
 		<property name="format_sql">true</property>
 		<!-- validate , create, create-drop udate -->
-		<property name="hibernate.hbm2ddl.auto">update</property>
+		
+		<property name="hibernate.hbm2ddl.auto">create</property>
 		<!-- jdbc connection pool build in  -->
+		
 		<property name="connection.pool_size">10</property>
+		
 		<!-- hey hiberante create a new hibernate session and put that into context of current thread -->
 		<property name="current_session_context_class">thread</property>
 	
@@ -27,3 +33,5 @@
 	
 	</session-factory>
 </hibernate-configuration>
+
+

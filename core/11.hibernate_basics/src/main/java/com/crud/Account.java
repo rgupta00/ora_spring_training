@@ -1,5 +1,6 @@
 package com.crud;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -7,13 +8,17 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "account")
+@Table(name = "account_table")
 public class Account {
 	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "account_id", nullable = false)
 	private int id;
+	@Column(name = "account_holder_name", nullable = false, length = 100)
 	private String name;
+	@Column(name = "account_balance", nullable = false)
 	private Double balance;
 
+	//joins (most imp topic)
 	public Account() {}
 	public Account(int id, String name, Double balance) {
 		this.id = id;
