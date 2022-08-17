@@ -82,3 +82,11 @@ INFO  | 2022-08-17 12:43:47 | [main] hibernate.Version (Version.java:45) - HHH00
 INFO  | 2022-08-17 12:43:47 | [main] cfg.Environment (Environment.java:213) - HHH000206: hibernate.properties not found
 INFO  | 2022-08-17 12:43:47 | [main] java.JavaReflectionManager (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
 INFO  | 2022-08-17 12:43:48 | [main] dialect.Dialect (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+INFO  | 2022-08-17 15:40:27 | [main] hibernate.Version (Version.java:45) - HHH000412: Hibernate Core {5.2.9.Final}
+INFO  | 2022-08-17 15:40:27 | [main] cfg.Environment (Environment.java:213) - HHH000206: hibernate.properties not found
+INFO  | 2022-08-17 15:40:27 | [main] java.JavaReflectionManager (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+INFO  | 2022-08-17 15:40:27 | [main] dialect.Dialect (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+INFO  | 2022-08-17 15:40:28 | [main] internal.QueryTranslatorFactoryInitiator (QueryTranslatorFactoryInitiator.java:47) - HHH000397: Using ASTQueryTranslatorFactory
+INFO  | 2022-08-17 15:40:28 | [main] util.LoggingAspect (LoggingAspect.java:38) - getAll 308 ms
+INFO  | 2022-08-17 15:40:29 | [main] util.LoggingAspect (LoggingAspect.java:38) - transfer 1019 ms
+INFO  | 2022-08-17 15:40:30 | [main] util.LoggingAspect (LoggingAspect.java:38) - getAll 3 ms
