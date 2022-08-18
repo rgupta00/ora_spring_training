@@ -10,7 +10,7 @@ public interface AccountService {
 
 	public Account getById(int id);
 
-	public void updateAccount(Account account);
+	public Account updateAccount(Account account);
 
 	public void transfer(int fromAccNo, int toAccountNo, double amount);
 
@@ -18,5 +18,7 @@ public interface AccountService {
 
 	public void withdraw(int accNo, double amount);
 	
-	public void createAccount(Account account);
+	public Account createAccount(Account account);
+	
+	public Account deleteAccount(int id);
 }

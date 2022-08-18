@@ -1,5 +1,7 @@
 package com.bankapp;
 
+import java.math.BigDecimal;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -23,8 +25,8 @@ public class Application implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		accountRepo.save(new Account("ravi", 7000, "ravi@gmail.com", "6565656566"));
-		accountRepo.save(new Account("seema", 7000, "seema@gmail.com", "6500656566"));
+		accountRepo.save(new Account("ravi", new BigDecimal(7000), "ravi@gmail.com", "6565656566"));
+		accountRepo.save(new Account("seema", new BigDecimal(7000), "seema@gmail.com", "6500656566"));
 		
 	}
 
