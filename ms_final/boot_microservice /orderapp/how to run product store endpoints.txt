@@ -1,0 +1,18 @@
+how to run this application:
+
+http://localhost:8081/customerapp/customers/1
+
+http://localhost:8082/productapp/products/1
+
+http://localhost:8085/couponapp/coupons/SUP05
+
+
+http://localhost:8080/orderapp/orders
+
+
+{
+        "cid": 1,
+        "pid": 1,
+        "quantity":2,
+        "discountCoupon":"SUP10"
+}
