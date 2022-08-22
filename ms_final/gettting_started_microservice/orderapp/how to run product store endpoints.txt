@@ -16,3 +16,21 @@ http://localhost:8080/orderapp/orders
         "quantity":2,
         "discountCoupon":"SUP10"
 }
+
+
+response
+{
+    "orderId": "9fe25b75-d840-4804-913f-f2df7bae6c6a",
+    "customer": {
+        "id": 1,
+        "name": "raj",
+        "email": "rgupta.mtech@gmail.com"
+    },
+    "product": {
+        "id": 1,
+        "name": "laptop",
+        "price": 100000.00
+    },
+    "totalPrice": 199980.00,
+    "date": "2022-08-22"
+}

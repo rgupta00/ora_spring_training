@@ -50,6 +50,7 @@ public class ProductApi {
 	@Operation(summary  = "get an product by id")
 	@GetMapping(path = "products/{id}")
 	public Product findById(@Parameter(description = "product id must be pass")  @PathVariable(name = "id") int id) {
+		System.out.println("product api running on port 8082");
 		return productService.getById(id);
 	}
 
